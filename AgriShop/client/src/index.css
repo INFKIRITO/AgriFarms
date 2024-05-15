@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700;900&family=Koulen&family=Playfair+Display:ital,wght@1,900&family=Roboto+Slab:wght@300&family=Wix+Madefor+Display:wght@500;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* Navbar CSS with extra features */
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+  position: sticky; /* Stick navbar to the top */
+  top: 0;
+  background-color: #fff; /* Navbar background color */
+  z-index: 1000; /* Ensure navbar appears above other content */
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.search-form input {
+  border: none;
+  border-radius: 0;
+}
+
+.search-form button {
+  background-color: #000000;
+  border-radius: 0;
+  color: white;
+}
+
+/* Hover effects */
+.navbar-nav li:hover {
+  background-color: #f2f2f2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #fff;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-nav li {
+    padding: 10px 0;
+  }
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+/* Transitions */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+
+/* =============================
+==========footer============= */
+
+
+.footer1 {
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+
+  width: 100%;
+  
+    font-family: 'Roboto Slab', serif;
+  /* font-family: 'Wix Madefor Display', sans-serif; */
+  
+    color: rgb(3, 3, 3);
+    padding: 10px;
+    font-size: 20px;
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dbdbdb, #dbdbdb);
+  }
+
+  .footer1 h1{
+    font-size: 30px;
+  }
+  
+  .footer1 a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(46, 46, 46);
+    padding: 10px;
+  }
+  
+  .footer1 a:hover {
+    color: #1d1d1d;
+    border-bottom: 1px solid #000000;
+  }
+
+
+  /* ------------------------------------------ */
+
+.footer {
+padding-bottom: 0%;
+margin-bottom: 0%;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+
+  font-family: 'Roboto Slab', serif;
+/* font-family: 'Wix Madefor Display', sans-serif; */
+
+  color: rgb(3, 3, 3);
+  padding: 15px;
+  font-size: 30px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dbdbdb, #dbdbdb);
+}
+.footer h1{
+  font-size: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(46, 46, 46);
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #1d1d1d;
+  border-bottom: 1px solid #000000;
+}
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.contactus-content {
+  max-width: 600px; /* Limit content width for better readability */
+}
+
+.contactus-img {
+  width: 100%;
+}
+
+.contactus-info {
+  background-color: #343a40; /* Dark background color for info section */
+  color: white; /* Text color */
+  padding: 20px; /* Add padding for breathing room */
+  border-radius: 5px; /* Add border radius for smoother edges */
+}
+
+.contactus-info h1 {
+  padding: 10px; /* Add padding for spacing */
+  background-color: #212529; /* Darker background color for heading */
+  font-size: 24px; /* Increase font size for heading */
+  text-transform: uppercase; /* Convert heading text to uppercase */
+  margin-bottom: 20px; /* Add margin below heading */
+}
+
+.contactus-info p {
+  margin-top: 10px; /* Add margin for spacing between paragraphs */
+  font-size: 16px; /* Set font size for paragraphs */
+  text-transform: uppercase;
+  line-height: 1.5; /* Set line height for better readability */
+}
+
+.contactus-info p svg {
+  margin-right: 10px; /* Add margin between icon and text */
+}
+
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+  margin-top: 100px !important;
+  overflow-x: hidden;
+  padding-left: 2%;
+}
+
+.dashboard-menu h4 {
+  background-color: #434343 !important;
+  color: white;
+  padding: 20px 0px;
+}

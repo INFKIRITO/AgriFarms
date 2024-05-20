@@ -1,7 +1,7 @@
 {
-  "name": "AgriShop",
+  "name": "AgriFarm",
   "version": "1.0.0",
-  "description": "Agrishop-Avinash jena",
+  "description": "AgriFarm-Aman Singh",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "keywords": [],
-  "author": "Avinash",
+  "author": "Aman",
   "license": "MIT",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",

@@ -97,7 +97,7 @@ const HomePage = () => {
   //get filterd product
   const filterProduct = async () => {
     try {
-      const { data } = await axios.post("/api/v1/product/product-filters", {
+      const { data } = await axios.post("https://agrifarms-mcku.onrender.com/api/v1/product/product-filters", {
         checked,
         radio,
       });
@@ -176,7 +176,7 @@ const HomePage = () => {
                   <div className="card-name-price">
                     <button
                       className="btn btn-info ms-1 "
-                      onClick={() => navigate(`/product/${p.slug}`)}
+                      onClick={() => navigate(`https://agrifarms-mcku.onrender.com/product/${p.slug}`)}
                     >
                       More Details
                     </button>

@@ -78,7 +78,7 @@ const UpdateProduct = () => {
         toast.error(data?.message);
       } else {
         toast.success("Product Updated Successfully");
-        navigate("/dashboard/admin/products");
+        navigate("https://agrifarms-mcku.onrender.com/dashboard/admin/products");
       }
     } catch (error) {
       console.log(error);
@@ -94,8 +94,8 @@ const UpdateProduct = () => {
       const { data } = await axios.delete(
         `https://agrifarms-mcku.onrender.com/api/v1/product/delete-product/${id}`
       );
-      toast.success("Product DEleted Succfully");
-      navigate("/dashboard/admin/products");
+      toast.success("Product Deleted successfully");
+      navigate("https://agrifarms-mcku.onrender.com/dashboard/admin/products");
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong");
@@ -153,7 +153,7 @@ const UpdateProduct = () => {
                 ) : (
                   <div className="text-center">
                     <img
-                      src={`/api/v1/product/product-photo/${id}`}
+                      src={`https://agrifarms-mcku.onrender.com/api/v1/product/product-photo/${id}`}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"

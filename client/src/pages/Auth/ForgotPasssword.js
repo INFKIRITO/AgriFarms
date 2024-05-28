@@ -16,7 +16,7 @@ const ForgotPasssword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/forgot-password", {
+      const res = await axios.post("https://agrifarms-mcku.onrender.com/api/v1/auth/forgot-password", {
         email,
         newPassword,
         answer,
@@ -24,7 +24,7 @@ const ForgotPasssword = () => {
       if (res && res.data.success) {
         toast.success(res.data && res.data.message);
 
-        navigate("/login");
+        navigate("https://agrifarms-mcku.onrender.com/login");
       } else {
         toast.error(res.data.message);
       }

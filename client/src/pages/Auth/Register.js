@@ -28,7 +28,7 @@ const Register = () => {
       });
       if (res && res.data.success) {
         toast.success(res.data && res.data.message);
-        navigate("/login");
+        navigate("https://agrifarms-mcku.onrender.com/login");
       } else {
         toast.error(res.data.message);
       }

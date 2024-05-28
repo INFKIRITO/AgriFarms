@@ -9,47 +9,41 @@ import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
 import path from 'path'
 import { fileURLToPath } from "url";
-//configure env
+
+// Configure environment variables
 dotenv.config();
 
-//databse config
+// Database configuration
 connectDB();
 
-//esmodule fix
+// Resolve directory paths for ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
-//rest object
+// Create Express app
 const app = express();
 
-//middelwares
-app.use(cors());
-app.use(express.json());
-app.use(morgan("dev"));
-app.use(express.static(path.join(__dirname, './client/build')))
+// Middleware
+app.use(cors()); // Enable CORS for all routes
+app.use(express.json()); // Parse JSON bodies
+app.use(morgan("dev")); // HTTP request logger
+app.use(express.static(path.join(__dirname, 'client', 'build'))); // Serve static files
 
-//routes
+// Define routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
-//rest api
+// CORS Configuration
 app.use(cors({
-  origin: 'https://agrifarms-1.onrender.com', // Your frontend URL
+  origin: ["https://localhost:3000", "https://agrifarms-1.onrender.com"], // Your frontend URLs
   optionsSuccessStatus: 200,
 }));
 
-
-//PORT
+// Define PORT
 const PORT = process.env.PORT || 8080;
 
-//run listen
+// Start server
 app.listen(PORT, () => {
-  console.log(
-    `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`.bgCyan
-      .white
-  );
+  console.log(`Server running in ${process.env.DEV_MODE} mode on port ${PORT}`.bgCyan.white);
 });
-
-

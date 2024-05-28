@@ -35,6 +35,11 @@ app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 //rest api
+app.use(cors({
+  origin: 'https://agrifarms-1.onrender.com', // Your frontend URL
+  optionsSuccessStatus: 200,
+}));
+
 app.use('*',function(req,res){
   res.sendFile(path.join(__dirname, './client/build/index.html'))
 })

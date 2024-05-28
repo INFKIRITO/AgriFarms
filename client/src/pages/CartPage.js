@@ -138,7 +138,7 @@ const CartPage = () => {
                     <h5>{auth?.user?.address}</h5>
                     <button
                       className="btn btn-outline-warning"
-                      onClick={() => navigate("https://agrifarms-mcku.onrender.com/dashboard/user/profile")}
+                      onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
                     </button>
@@ -149,7 +149,7 @@ const CartPage = () => {
                   {auth?.token ? (
                     <button
                       className="btn btn-outline-warning"
-                      onClick={() => navigate("https://agrifarms-mcku.onrender.com/dashboard/user/profile")}
+                      onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
                     </button>
@@ -157,8 +157,8 @@ const CartPage = () => {
                     <button
                       className="btn btn-outline-warning"
                       onClick={() =>
-                        navigate("https://agrifarms-mcku.onrender.com/login", {
-                          state: "https://agrifarms-mcku.onrender.com/cart",
+                        navigate("/login", {
+                          state: "/cart",
                         })
                       }
                     >

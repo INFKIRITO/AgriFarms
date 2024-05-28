@@ -156,7 +156,7 @@ const HomePage = () => {
             {products?.map((p) => (
               <div className="card m-2 drop-shadow-lg" key={p._id}>
                 <img
-                  src={`/api/v1/product/product-photo/${p._id}`}
+                  src={`https://agrifarms-mcku.onrender.com/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                 />
@@ -176,7 +176,7 @@ const HomePage = () => {
                   <div className="card-name-price">
                     <button
                       className="btn btn-info ms-1 "
-                      onClick={() => navigate(`https://agrifarms-mcku.onrender.com/product/${p.slug}`)}
+                      onClick={() => navigate(`/product/${p.slug}`)}
                     >
                       More Details
                     </button>

@@ -54,7 +54,7 @@ const CreateProduct = () => {
         toast.error(data?.message);
       } else {
         toast.success("Product Created Successfully");
-        navigate("https://agrifarms-mcku.onrender.com/dashboard/admin/products");
+        navigate("/dashboard/admin/products");
       }
     } catch (error) {
       console.log(error);

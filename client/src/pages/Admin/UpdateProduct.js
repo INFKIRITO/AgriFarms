@@ -78,7 +78,7 @@ const UpdateProduct = () => {
         toast.error(data?.message);
       } else {
         toast.success("Product Updated Successfully");
-        navigate("https://agrifarms-mcku.onrender.com/dashboard/admin/products");
+        navigate("/dashboard/admin/products");
       }
     } catch (error) {
       console.log(error);
@@ -95,7 +95,7 @@ const UpdateProduct = () => {
         `https://agrifarms-mcku.onrender.com/api/v1/product/delete-product/${id}`
       );
       toast.success("Product Deleted successfully");
-      navigate("https://agrifarms-mcku.onrender.com/dashboard/admin/products");
+      navigate("/dashboard/admin/products");
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong");

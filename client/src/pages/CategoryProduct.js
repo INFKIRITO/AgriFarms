@@ -55,7 +55,7 @@ const CategoryProduct = () => {
                     <div className="card-name-price">
                       <button
                         className="btn btn-info ms-1"
-                        onClick={() => navigate(`https://agrifarms-mcku.onrender.com/product/${p.slug}`)}
+                        onClick={() => navigate(`/product/${p.slug}`)}
                       >
                         More Details
                       </button>

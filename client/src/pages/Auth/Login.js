@@ -79,7 +79,7 @@ const Login = () => {
               type="button"
               className="btn forgot-btn"
               onClick={() => {
-                navigate("https://agrifarms-mcku.onrender.com/forgot-password");
+                navigate("/forgot-password");
               }}
             >
               Forgot Password

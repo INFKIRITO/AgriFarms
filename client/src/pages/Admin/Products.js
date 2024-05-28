@@ -34,7 +34,7 @@ const Products = () => {
             {products?.map((p) => (
               <Link
                 key={p._id}
-                to={`https://agrifarms-mcku.onrender.com/dashboard/admin/product/${p.slug}`}
+                to={`/dashboard/admin/product/${p.slug}`}
                 className="product-link"
               >
                 <div className="card m-2" style={{ width: "12rem" }}>

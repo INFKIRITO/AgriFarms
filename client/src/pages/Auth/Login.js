@@ -8,7 +8,6 @@ import { useAuth } from "../../context/auth";
 // import vid from "../Auth/1.mp4"
 
 
-// https://github.com/AvinashJ74/AgriShop/assets/83860778/dcc330e0-3690-48f4-a135-073c038b6b38
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +20,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/login", {
+      const res = await axios.post("https://agrifarms-mcku.onrender.com/api/v1/auth/login", {
         email,
         password,
       });

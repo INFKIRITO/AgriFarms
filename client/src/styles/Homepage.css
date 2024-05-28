@@ -163,7 +163,7 @@ filters
 }
 
 .card-img-top {
-  height: 250px !important;
+  height: 150px !important;
   width: 100%; /* Ensure image fills card width */
   object-fit: cover; /* Maintain aspect ratio */
   border-top-left-radius: 10px; /* Add border-radius for smoother edges */

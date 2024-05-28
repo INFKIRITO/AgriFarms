@@ -1,17 +1,6 @@
 
-# AgriShop
-
-"Agri Shop" revolutionizes farmer's markets online, connecting consumers directly with local growers. The platform offers a diverse range of organic produce, from fresh fruits and vegetables to dairy and grains. With a user-friendly interface, shoppers easily browse farms, learning about cultivation methods and product details. Emphasizing organic farming, "Agri Shop" ensures all items are free from harmful chemicals and GMOs. Beyond sales, it fosters community engagement through educational resources on sustainable agriculture. By supporting local farmers and promoting transparent, healthy food options, "Agri Shop" is reshaping the food industry, fostering a closer connection between producers and consumers for a more sustainable future.
-
-[Demo](https://agrishop.onrender.com/)  |
-[Full Report](https://agrishop-report.tiiny.site/)
-
-
-
-## Authors
-
-- [@Avinash jena](https://github.com/AvinashJ74)
-
+# AgriFarms
+"AgriFarms" transforms the traditional farmers' market experience by bringing it online, directly linking consumers with local farmers. The platform features a wide array of organic products, including fresh fruits, vegetables, dairy, and grains. With an intuitive design, customers can easily explore different farms, gaining insights into their farming practices and product specifics. Prioritizing organic agriculture, "AgriFarms" guarantees that all offerings are free from harmful chemicals and GMOs. Besides facilitating sales, the platform enhances community involvement by providing educational resources on sustainable farming. By championing local farmers and offering transparent, healthy food choices, "AgriFarms" is revolutionizing the food industry, fostering a stronger bond between producers and consumers, and promoting a more sustainable future.
 
 ## Tech Stack
 
@@ -41,22 +30,10 @@ To run tests, run the following command
 
 ## Features
 
-- User-Friendly Interface: A simple and intuitive design allowing users to easily navigate through the website.
-- Product Listings: Detailed listings for various organic products, including images, descriptions, prices, and farmer information.
-- Search and Filter Options: Tools to search for specific products or filter by categories, farms, or organic certifications.
-- Secure Payment Gateway: Integration with trusted payment gateways to ensure secure transactions.
-- User Accounts: Registration and login functionality for users to create accounts, manage orders, and view purchase history.
-- Order Tracking: Ability for users to track the status of their orders from placement to delivery.
-- Localization: Support for multiple languages and currencies to cater to a diverse user base.
-## .env
-
-| Enviroment variable | Input     |
-| :-------- | :------- | 
-| PORT | 8080 | 
-| DEV_MODE | development |
-| MONGO_URL | " " |
-| JWT_SECRET | HGFHGEAD1212432432 | 
-| BRAINTREE_MERCHANT_ID | " " | 
-| BRAINTREE_PUBLIC_KEY | " " |
-| BRAINTREE_PRIVATE_KEY | " " |
-
+- **User-Friendly Interface**: Features a straightforward and intuitive design that allows users to effortlessly navigate the website.
+- **Product Listings**: Offers comprehensive listings for various organic products, complete with images, descriptions, prices, and detailed farmer information.
+- **Search and Filter Options**: Provides tools to search for specific products or filter by categories, farms, or organic certifications.
+- **Secure Payment Gateway**: Integrates with reliable payment gateways to ensure secure and safe transactions.
+- **User Accounts**: Includes registration and login functionalities, enabling users to create accounts, manage their orders, and view their purchase history.
+- **Order Tracking**: Allows users to track the progress of their orders from placement to delivery.
+- **Localization**: Supports multiple languages and currencies to accommodate a diverse user base.
